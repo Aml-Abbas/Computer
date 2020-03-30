@@ -1,4 +1,4 @@
-package Memory;
+package memory;
 
 public interface Memory {
     long getAddress(int address);

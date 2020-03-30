@@ -1,7 +1,4 @@
-package Memory;
-
-import java.util.ArrayList;
-import java.util.List;
+package memory;
 
 public class LongMemory implements Memory{
     long[] list;

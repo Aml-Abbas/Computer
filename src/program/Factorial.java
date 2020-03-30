@@ -1,10 +1,8 @@
-package Program;
+package program;
 
-import Command.*;
-import Address.Address;
-import Word.LongWord;
-
-import java.util.ArrayList;
+import command.*;
+import address.Address;
+import word.LongWord;
 
 public class Factorial extends Program {
 

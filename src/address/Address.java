@@ -1,6 +1,6 @@
-package Address;
+package address;
 
-import Memory.Memory;
+import memory.Memory;
 
 public class Address {
     int address;

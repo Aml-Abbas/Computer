@@ -1,7 +1,7 @@
-package Command;
+package command;
 
-import Computer.Counter;
-import Memory.Memory;
+import computer.Counter;
+import memory.Memory;
 
 public interface Command {
 

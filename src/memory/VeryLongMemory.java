@@ -1,4 +1,4 @@
-package Memory;
+package memory;
 
 public class VeryLongMemory implements Memory{
 

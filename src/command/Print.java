@@ -1,8 +1,8 @@
-package Command;
+package command;
 
-import Address.Address;
-import Computer.Counter;
-import Memory.Memory;
+import address.Address;
+import computer.Counter;
+import memory.Memory;
 
 public class Print implements Command {
     Address address;

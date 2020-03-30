@@ -1,6 +1,4 @@
-package Word;
-
-import Memory.Memory;
+package word;
 
 public class VeryLongWord implements Word{
 

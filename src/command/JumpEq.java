@@ -1,9 +1,9 @@
-package Command;
+package command;
 
-import Address.Address;
-import Computer.Counter;
-import Memory.Memory;
-import Word.Word;
+import address.Address;
+import computer.Counter;
+import memory.Memory;
+import word.Word;
 
 public class JumpEq implements Command {
     int toCommand;

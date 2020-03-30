@@ -1,6 +1,6 @@
-package Program;
+package program;
 
-import Command.Command;
+import command.Command;
 
 import java.util.ArrayList;
 

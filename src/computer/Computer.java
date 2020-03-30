@@ -1,7 +1,7 @@
-package Computer;
+package computer;
 
-import Memory.Memory;
-import Program.Program;
+import memory.Memory;
+import program.Program;
 
 public class Computer {
     Memory memory;
