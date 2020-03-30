@@ -1,6 +1,7 @@
 import Computer.Computer;
 import Memory.LongMemory;
 import Program.Program;
+import Program.Factorial;
 
 public class ComputerTest {
     public static void main(String[] args) {
