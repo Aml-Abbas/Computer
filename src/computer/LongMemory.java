@@ -3,7 +3,7 @@ package computer;
 import Operand.Word;
 
 public class LongMemory implements Memory{
-    Word[] list;
+    private Word[] list;
 
     public LongMemory(int nbr){
         list= new Word[nbr];

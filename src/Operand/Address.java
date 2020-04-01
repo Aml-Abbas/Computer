@@ -3,7 +3,7 @@ package Operand;
 import computer.Memory;
 
 public class Address implements Operand{
-    int address;
+    private int address;
 
     public Address(int address){
     this.address= address;
@@ -19,6 +19,10 @@ public class Address implements Operand{
 
     @Override
     public Word getWord(Memory memory) {
-        return null;
+        return memory.getWord(address);
+    }
+    @Override
+    public String toString() {
+        return "["+address+"]";
     }
 }

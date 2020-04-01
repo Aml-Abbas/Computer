@@ -3,7 +3,7 @@ package Operand;
 import computer.Memory;
 
 public class LongWord implements Word {
-    long value;
+    private long value;
 
     public LongWord(long value){
     this.value= value;
@@ -15,12 +15,24 @@ public class LongWord implements Word {
     }
 
     @Override
-    public Word ADD(Word word1, Word word2) {
-        return Add(word1,word2);
+    public Word ADD(Word word) {
+        long result= value + word.getValue();
+        return new LongWord(result);
     }
 
     @Override
-    public Word MUL(Word word1, Word word2) {
-        return null;
+    public Word MUL(Word word) {
+        long result= value * word.getValue();
+        return new LongWord(result);
+    }
+
+    @Override
+    public long getValue() {
+        return value;
+    }
+
+    @Override
+    public String toString() {
+        return Long.toString(value);
     }
 }

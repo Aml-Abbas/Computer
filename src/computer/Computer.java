@@ -1,9 +1,9 @@
 package computer;
 
 public class Computer {
-    Memory memory;
-    Program program;
-    Counter counter;
+    private Memory memory;
+    private Program program;
+    private Counter counter;
 
     public Computer(Memory memory){
         this.memory= memory;

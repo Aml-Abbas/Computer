@@ -5,8 +5,8 @@ import Operand.Operand;
 import Operand.Word;
 
 public class Mul extends arithmeticOperation {
-    Operand op1,op2;
-    Address address;
+    private Operand op1,op2;
+    private Address address;
 
     public Mul(Operand op1, Operand op2, Address address) {
         super(op1, op2, address);
@@ -19,8 +19,8 @@ public class Mul extends arithmeticOperation {
     }
 
     @Override
-    protected long getOperate(long nbr1, long nbr2) {
-        return nbr1*nbr2;
+    protected Word getOperate(Word nbr1, Word nbr2) {
+        return nbr1.MUL(nbr2);
     }
 
 }

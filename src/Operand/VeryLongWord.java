@@ -10,12 +10,22 @@ public class VeryLongWord implements Word {
     }
 
     @Override
-    public Word ADD(Word word1, Word word2) {
+    public Word ADD(Word word) {
         return null;
     }
 
     @Override
-    public Word MUL(Word word1, Word word2) {
+    public Word MUL(Word word) {
         return null;
+    }
+
+    @Override
+    public long getValue() {
+        return 0;
+    }
+
+    @Override
+    public String toString() {
+        return "";
     }
 }

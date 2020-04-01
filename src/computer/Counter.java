@@ -1,7 +1,7 @@
 package computer;
 
 public class Counter {
-    int counter;
+    private int counter;
 
     public Counter(){
         counter=0;

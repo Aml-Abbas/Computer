@@ -1,14 +1,13 @@
 package command;
 
-import Operand.Address;
 import Operand.Operand;
 import computer.Counter;
 import computer.Memory;
 import Operand.Word;
 
 public class JumpEq implements Instruktion {
-    int toCommand;
-    Operand op1,op2;
+    private int toCommand;
+    private Operand op1,op2;
 
     public JumpEq(int toCommand, Operand op1, Operand op2){
         this.toCommand=toCommand;
@@ -23,7 +22,7 @@ public class JumpEq implements Instruktion {
         nbr1= op1.getWord(memory);
         nbr2= op2.getWord(memory);
 
-        if (nbr1==nbr2){
+        if (nbr1.getValue()==nbr2.getValue()){
             counter.setCounter(toCommand);
         }else {
             counter.increaseCounter();

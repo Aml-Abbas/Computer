@@ -4,7 +4,7 @@ import computer.Counter;
 import computer.Memory;
 
 public class Jump implements Instruktion {
-    int toCommand;
+   private int toCommand;
 
     public Jump(int toCommand){
     this.toCommand=toCommand;

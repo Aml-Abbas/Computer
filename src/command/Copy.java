@@ -4,11 +4,10 @@ import Operand.Address;
 import Operand.Operand;
 import computer.Counter;
 import computer.Memory;
-import Operand.Word;
 
 public class Copy implements Instruktion {
-    Operand op;
-    Address address;
+   private Operand op;
+    private Address address;
 
     public Copy(Operand op, Address address){
     this.op= op;
@@ -18,14 +17,14 @@ public class Copy implements Instruktion {
 
     @Override
     public void execute(Counter counter, Memory memory) {
-        Word nbr= op.getWord(memory);
-        address.setWord(nbr, memory);
+        address.setWord(op.getWord(memory), memory);
 
         counter.increaseCounter();
     }
     @Override
     public String toString() {
         String object= op.toString();
-        return "CPY "+object+" ["+address.getIndex()+"]";
+        return "CPY "+object+" "+address.toString();
     }
 }
+

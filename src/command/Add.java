@@ -20,8 +20,8 @@ public class Add extends arithmeticOperation {
     }
 
     @Override
-    protected long getOperate(long nbr1, long nbr2) {
-        return nbr1+nbr2;
+    protected Word getOperate(Word nbr1, Word nbr2) {
+        return nbr1.ADD(nbr2);
     }
 
 }
