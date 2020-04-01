@@ -1,10 +1,10 @@
 package command;
 
-import address.Address;
+import Operand.Address;
 import computer.Counter;
-import memory.Memory;
+import computer.Memory;
 
-public class Print implements Command {
+public class Print implements Instruktion {
     Address address;
 
     public Print(Address address){

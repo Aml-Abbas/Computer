@@ -1,34 +1,21 @@
 package command;
 
-import address.Address;
+import Operand.Address;
+import Operand.Operand;
 import computer.Counter;
-import memory.Memory;
-import word.Word;
+import computer.Memory;
+import Operand.Word;
 
-public class JumpEq implements Command {
+public class JumpEq implements Instruktion {
     int toCommand;
-    Object ob1,ob2;
+    Operand op1,op2;
 
-    public JumpEq(int toCommand, Address ob1, Address ob2){
+    public JumpEq(int toCommand, Operand op1, Operand op2){
         this.toCommand=toCommand;
-        this.ob1=ob1;
-        this.ob2=ob2;
+        this.op1=op1;
+        this.op2=op2;
     }
-    public JumpEq(int toCommand, Address ob1, Word ob2){
-        this.toCommand=toCommand;
-        this.ob1=ob1;
-        this.ob2=ob2;
-    }
-    public JumpEq(int toCommand, Word ob1, Word ob2){
-        this.toCommand=toCommand;
-        this.ob1=ob1;
-        this.ob2=ob2;
-    }
-    public JumpEq(int toCommand, Word ob1, Address ob2){
-        this.toCommand=toCommand;
-        this.ob1=ob1;
-        this.ob2=ob2;
-    }
+
 
     @Override
     public void execute(Counter counter, Memory memory) {

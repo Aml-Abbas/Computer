@@ -1,15 +1,15 @@
-package program;
+package computer;
 
-import command.Command;
+import command.Instruktion;
 
 import java.util.ArrayList;
 
-abstract public class Program extends ArrayList<Command> {
+abstract public class Program extends ArrayList<Instruktion> {
 
 
     public String toString(){
         StringBuilder sb= new StringBuilder();
-        for (Command command: this){
+        for (Instruktion command: this){
             sb.append(this.indexOf(command)+" ");
             sb.append(command.toString());
             sb.append("\n");

@@ -1,9 +1,9 @@
 package command;
 
 import computer.Counter;
-import memory.Memory;
+import computer.Memory;
 
-public class Jump implements Command {
+public class Jump implements Instruktion {
     int toCommand;
 
     public Jump(int toCommand){

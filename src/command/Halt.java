@@ -1,9 +1,9 @@
 package command;
 
 import computer.Counter;
-import memory.Memory;
+import computer.Memory;
 
-public class Halt implements Command {
+public class Halt implements Instruktion {
 
     public Halt(){
 

@@ -1,9 +1,9 @@
 package command;
 
 import computer.Counter;
-import memory.Memory;
+import computer.Memory;
 
-public interface Command {
+public interface Instruktion {
 
      void execute(Counter counter, Memory memory);
      String toString();

@@ -1,8 +1,8 @@
-package program;
+package computer;
 
 import command.*;
-import address.Address;
-import word.LongWord;
+import Operand.Address;
+import Operand.LongWord;
 
 public class Factorial extends Program {
 

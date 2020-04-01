@@ -1,26 +1,15 @@
 package command;
 
-import address.Address;
-import word.Word;
+import Operand.Address;
+import Operand.Operand;
+import Operand.Word;
 
-public class Mul extends Operation {
-    Object ob1,ob2;
+public class Mul extends arithmeticOperation {
+    Operand op1,op2;
     Address address;
 
-    public Mul(Address address1, Address address2, Address address) {
-        super(address1, address2, address);
-    }
-
-    Mul(Word w1, Word w2, Address address) {
-        super(w1, w2, address);
-    }
-
-    Mul(Address address1, Word w2, Address address) {
-        super(address1, w2, address);
-    }
-
-    Mul(Word w1, Address address2, Address address) {
-        super(w1, address2, address);
+    Mul(Operand op1, Operand op2, Address address) {
+        super(op1, op2, address);
     }
 
 

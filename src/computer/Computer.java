@@ -1,8 +1,5 @@
 package computer;
 
-import memory.Memory;
-import program.Program;
-
 public class Computer {
     Memory memory;
     Program program;

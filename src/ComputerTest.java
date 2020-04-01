@@ -1,7 +1,7 @@
 import computer.Computer;
-import memory.LongMemory;
-import program.Program;
-import program.Factorial;
+import computer.LongMemory;
+import computer.Program;
+import computer.Factorial;
 
 public class ComputerTest {
     public static void main(String[] args) {

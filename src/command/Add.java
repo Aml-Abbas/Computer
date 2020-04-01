@@ -1,27 +1,16 @@
 package command;
 
-import address.Address;
-import word.Word;
+import Operand.Address;
+import Operand.Operand;
+import Operand.Word;
 
-public class Add extends Operation {
+public class Add extends arithmeticOperation {
 
-    Object ob1,ob2;
+    Operand op1,op2;
     Address address;
 
-    Add(Address address1, Address address2, Address address) {
-        super(address1, address2, address);
-    }
-
-    Add(Word w1, Word w2, Address address) {
-        super(w1, w2, address);
-    }
-
-    public Add(Address address1, Word w2, Address address) {
-        super(address1, w2, address);
-    }
-
-    Add(Word w1, Address address2, Address address) {
-        super(w1, address2, address);
+    Add(Operand op1, Operand op2, Address address) {
+        super(op1, op2, address);
     }
 
 
