@@ -11,12 +11,12 @@ public class LongWord implements Word {
 
     @Override
     public Word getWord(Memory memory) {
-        return null;
+        return new LongWord(value);
     }
 
     @Override
     public Word ADD(Word word1, Word word2) {
-        return null;
+        return Add(word1,word2);
     }
 
     @Override

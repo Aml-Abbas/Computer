@@ -9,7 +9,7 @@ public class Add extends arithmeticOperation {
     Operand op1,op2;
     Address address;
 
-    Add(Operand op1, Operand op2, Address address) {
+    public Add(Operand op1, Operand op2, Address address) {
         super(op1, op2, address);
     }
 
@@ -20,7 +20,7 @@ public class Add extends arithmeticOperation {
     }
 
     @Override
-    protected long getOperation(long nbr1, long nbr2) {
+    protected long getOperate(long nbr1, long nbr2) {
         return nbr1+nbr2;
     }
 

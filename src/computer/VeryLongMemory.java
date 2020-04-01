@@ -7,7 +7,7 @@ public class VeryLongMemory implements Memory{
 
     @Override
     public Word getWord(int address) {
-        return new LongWord(0);
+        return null;
     }
 
     @Override

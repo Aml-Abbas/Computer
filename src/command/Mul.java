@@ -8,7 +8,7 @@ public class Mul extends arithmeticOperation {
     Operand op1,op2;
     Address address;
 
-    Mul(Operand op1, Operand op2, Address address) {
+    public Mul(Operand op1, Operand op2, Address address) {
         super(op1, op2, address);
     }
 
@@ -19,7 +19,7 @@ public class Mul extends arithmeticOperation {
     }
 
     @Override
-    protected long getOperation(long nbr1, long nbr2) {
+    protected long getOperate(long nbr1, long nbr2) {
         return nbr1*nbr2;
     }
 

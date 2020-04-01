@@ -18,19 +18,19 @@ abstract public class arithmeticOperation implements Instruktion {
 
     @Override
     public void execute(Counter counter, Memory memory) {
-
+        getOperate(op1,op2);
         counter.increaseCounter();
 
     }
 
     @Override
     public String toString() {
-
-        String object1="", object2="";
-
+        String object1= op1.toString(), object2=op2.toString();
         return getString()+object1+" "+object2+" "+"["+address.getIndex()+"]";
     }
+
     protected abstract String getString();
-    protected abstract long getOperation(long nbr1, long nbr2);
+
+    protected abstract long getOperate(long nbr1, long nbr2);
 
 }

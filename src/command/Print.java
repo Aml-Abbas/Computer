@@ -13,7 +13,7 @@ public class Print implements Instruktion {
 
     @Override
     public void execute(Counter counter, Memory memory) {
-        System.out.println(address.getValue(memory));
+        System.out.println(address.getWord(memory));
 
        counter.increaseCounter();
     }

@@ -9,8 +9,8 @@ public class Address implements Operand{
     this.address= address;
     }
 
-    public void setWord(long value, Memory memory){
-        memory.setWord(address,value);
+    public void setWord(Word word, Memory memory){
+        memory.setWord(address,word);
     }
 
     public int getIndex(){

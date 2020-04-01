@@ -18,25 +18,14 @@ public class Copy implements Instruktion {
 
     @Override
     public void execute(Counter counter, Memory memory) {
-        long nbr;
-        if (ob instanceof Address){
-            nbr= ((Address) ob).getValue(memory);
-        }else {
-            nbr= ((Word) ob).getValue();
-        }
-        address.setValue(nbr, memory);
+        Word nbr= op.getWord(memory);
+        address.setWord(nbr, memory);
 
         counter.increaseCounter();
     }
     @Override
     public String toString() {
-        String object="";
-        if (ob instanceof Address){
-            object+="["+((Address) ob).getIndex()+"]";
-        }else {
-            object+=((Word) ob).getValue();
-        }
-
+        String object= op.toString();
         return "CPY "+object+" ["+address.getIndex()+"]";
     }
 }
