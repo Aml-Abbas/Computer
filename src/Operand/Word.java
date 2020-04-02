@@ -1,8 +1,9 @@
 package Operand;
 
-public interface Word extends Operand{
-      Word ADD(Word word);
-      Word MUL(Word word);
-      long getValue();
+import computer.Memory;
 
+public abstract class Word implements Operand {
+
+    public abstract void Add(Word word, Address address, Memory memory);
+    public abstract void Mul(Word word, Address address, Memory memory);
 }

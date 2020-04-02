@@ -3,6 +3,7 @@ package command;
 import Operand.Address;
 import Operand.Operand;
 import Operand.Word;
+import computer.Memory;
 
 public class Add extends arithmeticOperation {
 
@@ -20,8 +21,8 @@ public class Add extends arithmeticOperation {
     }
 
     @Override
-    protected Word getOperate(Word nbr1, Word nbr2) {
-        return nbr1.ADD(nbr2);
+    protected void getOperate(Word nbr1, Word nbr2, Address address, Memory memory) {
+         nbr1.Add(nbr2, address, memory);
     }
 
 }

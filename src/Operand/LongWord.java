@@ -2,11 +2,11 @@ package Operand;
 
 import computer.Memory;
 
-public class LongWord implements Word {
+public class LongWord extends Word {
     private long value;
 
-    public LongWord(long value){
-    this.value= value;
+    public LongWord(long value) {
+        this.value = value;
     }
 
     @Override
@@ -15,20 +15,15 @@ public class LongWord implements Word {
     }
 
     @Override
-    public Word ADD(Word word) {
-        long result= value + word.getValue();
-        return new LongWord(result);
+    public void Add(Word word, Address address, Memory memory) {
+        long result = value + ((LongWord) word).value;
+        address.setWord(new LongWord(result),memory);
     }
 
     @Override
-    public Word MUL(Word word) {
-        long result= value * word.getValue();
-        return new LongWord(result);
-    }
-
-    @Override
-    public long getValue() {
-        return value;
+    public void Mul(Word word, Address address, Memory memory) {
+        long result = value * ((LongWord) word).value;
+        address.setWord(new LongWord(result),memory);
     }
 
     @Override

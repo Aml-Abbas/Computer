@@ -2,7 +2,7 @@ package Operand;
 
 import computer.Memory;
 
-public class VeryLongWord implements Word {
+public class VeryLongWord extends Word {
 
     @Override
     public Word getWord(Memory memory) {
@@ -10,18 +10,12 @@ public class VeryLongWord implements Word {
     }
 
     @Override
-    public Word ADD(Word word) {
-        return null;
+    public void Add(Word word, Address address, Memory memory) {
+
     }
 
     @Override
-    public Word MUL(Word word) {
-        return null;
-    }
-
-    @Override
-    public long getValue() {
-        return 0;
+    public void Mul(Word word, Address address, Memory memory) {
     }
 
     @Override

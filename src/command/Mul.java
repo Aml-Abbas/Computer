@@ -3,6 +3,7 @@ package command;
 import Operand.Address;
 import Operand.Operand;
 import Operand.Word;
+import computer.Memory;
 
 public class Mul extends arithmeticOperation {
     private Operand op1,op2;
@@ -19,8 +20,8 @@ public class Mul extends arithmeticOperation {
     }
 
     @Override
-    protected Word getOperate(Word nbr1, Word nbr2) {
-        return nbr1.MUL(nbr2);
+    protected void getOperate(Word nbr1, Word nbr2, Address address, Memory memory) {
+         nbr1.Mul(nbr2,address,memory);
     }
 
 }

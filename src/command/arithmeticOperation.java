@@ -20,9 +20,7 @@ abstract public class arithmeticOperation implements Instruktion {
 
     @Override
     public void execute(Counter counter, Memory memory) {
-        Word result= getOperate(op1.getWord(memory),op2.getWord(memory));
-        address.setWord(result,memory);
-
+        getOperate(op1.getWord(memory),op2.getWord(memory),address,memory);
         counter.increaseCounter();
     }
 
@@ -35,6 +33,6 @@ abstract public class arithmeticOperation implements Instruktion {
 
     protected abstract String getString();
 
-    protected abstract Word getOperate(Word nbr1, Word nbr2);
+    protected abstract void getOperate(Word nbr1, Word nbr2, Address address, Memory memory);
 
 }
