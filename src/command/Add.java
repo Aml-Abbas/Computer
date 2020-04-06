@@ -21,8 +21,8 @@ public class Add extends arithmeticOperation {
     }
 
     @Override
-    protected void getOperate(Word nbr1, Word nbr2, Address address, Memory memory) {
-         nbr1.Add(nbr2, address, memory);
+    protected void operate(Word word1, Word word2, Word word3) {
+         word3.add(word1, word2);
     }
 
 }

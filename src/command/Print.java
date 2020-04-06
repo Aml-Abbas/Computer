@@ -1,7 +1,7 @@
 package command;
 
 import Operand.Address;
-import computer.Counter;
+import computer.Computer;
 import computer.Memory;
 
 public class Print implements Instruktion {
@@ -12,10 +12,10 @@ public class Print implements Instruktion {
     }
 
     @Override
-    public void execute(Counter counter, Memory memory) {
+    public void execute(Computer computer, Memory memory) {
         System.out.println(address.getWord(memory).getValue());
 
-       counter.increaseCounter();
+       computer.increaseCounter();
     }
 
     @Override

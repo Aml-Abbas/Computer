@@ -1,6 +1,6 @@
 package command;
 
-import computer.Counter;
+import computer.Computer;
 import computer.Memory;
 
 public class Halt implements Instruktion {
@@ -10,8 +10,8 @@ public class Halt implements Instruktion {
     }
 
     @Override
-    public void execute(Counter counter, Memory memory) {
-        counter.setCounter(-1);
+    public void execute(Computer computer, Memory memory) {
+        computer.setCounter(-1);
     }
 
     @Override

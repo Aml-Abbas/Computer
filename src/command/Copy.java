@@ -2,7 +2,7 @@ package command;
 
 import Operand.Address;
 import Operand.Operand;
-import computer.Counter;
+import computer.Computer;
 import computer.Memory;
 
 public class Copy implements Instruktion {
@@ -16,10 +16,9 @@ public class Copy implements Instruktion {
 
 
     @Override
-    public void execute(Counter counter, Memory memory) {
-        address.setWord(op.getWord(memory), memory);
-
-        counter.increaseCounter();
+    public void execute(Computer computer, Memory memory) {
+        memory.setWord(address.getIndex(), op.getWord(memory));
+        computer.increaseCounter();
     }
     @Override
     public String toString() {

@@ -2,27 +2,24 @@ package Operand;
 
 import computer.Memory;
 
-public class Address implements Operand{
-    private int address;
+public class Address implements Operand {
+    private int index;
 
-    public Address(int address){
-    this.address= address;
-    }
-
-    public void setWord(Word word, Memory memory){
-        memory.setWord(address,word);
-    }
-
-    public int getIndex(){
-        return address;
+    public Address(int address) {
+        this.index = address;
     }
 
     @Override
     public Word getWord(Memory memory) {
-        return memory.getWord(address);
+        return memory.getWord(index);
     }
+
     @Override
     public String toString() {
-        return "["+address+"]";
+        return "[" + index + "]";
+    }
+
+    public int getIndex() {
+        return index;
     }
 }

@@ -1,7 +1,7 @@
 package command;
 
 import Operand.Operand;
-import computer.Counter;
+import computer.Computer;
 import computer.Memory;
 import Operand.Word;
 
@@ -17,15 +17,15 @@ public class JumpEq implements Instruktion {
 
 
     @Override
-    public void execute(Counter counter, Memory memory) {
+    public void execute(Computer computer, Memory memory) {
         Word nbr1, nbr2;
         nbr1= op1.getWord(memory);
         nbr2= op2.getWord(memory);
 
         if (nbr1.getValue()==nbr2.getValue()){
-            counter.setCounter(toCommand);
+            computer.setCounter(toCommand);
         }else {
-            counter.increaseCounter();
+            computer.increaseCounter();
         }
     }
 

@@ -1,6 +1,6 @@
 package command;
 
-import computer.Counter;
+import computer.Computer;
 import computer.Memory;
 
 public class Jump implements Instruktion {
@@ -12,8 +12,8 @@ public class Jump implements Instruktion {
     }
 
     @Override
-    public void execute(Counter counter, Memory memory) {
-        counter.setCounter(toCommand);
+    public void execute(Computer computer, Memory memory) {
+        computer.setCounter(toCommand);
     }
 
     @Override

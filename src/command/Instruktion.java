@@ -1,10 +1,10 @@
 package command;
 
-import computer.Counter;
+import computer.Computer;
 import computer.Memory;
 
 public interface Instruktion {
 
-     void execute(Counter counter, Memory memory);
+     void execute(Computer computer, Memory memory);
      String toString();
 }
