@@ -5,7 +5,7 @@ import computer.Computer;
 import computer.Memory;
 import Operand.Word;
 
-public class JumpEq implements Instruktion {
+public class JumpEq implements Instruction {
     private int toCommand;
     private Operand op1,op2;
 

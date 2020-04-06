@@ -10,18 +10,18 @@ public class LongWord extends Word {
 
     @Override
     public void add(Word w1, Word w2) {
-        value= w1.getValue()+w2.getValue();
+        value = w1.getValue() + w2.getValue();
     }
 
     @Override
     public void mul(Word w1, Word w2) {
-        value= w1.getValue()*w2.getValue();
+        value = w1.getValue() * w2.getValue();
 
     }
 
     @Override
     public boolean equals(Word w) {
-        return value== w.getValue();
+        return value == w.getValue();
     }
 
     @Override
@@ -31,6 +31,6 @@ public class LongWord extends Word {
 
     @Override
     public String toString() {
-        return ""+value;
+        return "" + value;
     }
 }

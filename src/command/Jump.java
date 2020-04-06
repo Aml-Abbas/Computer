@@ -3,7 +3,7 @@ package command;
 import computer.Computer;
 import computer.Memory;
 
-public class Jump implements Instruktion {
+public class Jump implements Instruction {
    private int toCommand;
 
     public Jump(int toCommand){

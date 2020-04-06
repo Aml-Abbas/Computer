@@ -3,9 +3,8 @@ package command;
 import Operand.Address;
 import Operand.Operand;
 import Operand.Word;
-import computer.Memory;
 
-public class Mul extends arithmeticOperation {
+public class Mul extends ArithmeticOperation {
     private Operand op1,op2;
     private Address address;
 

@@ -4,7 +4,7 @@ import Operand.Address;
 import computer.Computer;
 import computer.Memory;
 
-public class Print implements Instruktion {
+public class Print implements Instruction {
     private Address address;
 
     public Print(Address address){

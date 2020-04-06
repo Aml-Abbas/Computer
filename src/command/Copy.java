@@ -5,7 +5,7 @@ import Operand.Operand;
 import computer.Computer;
 import computer.Memory;
 
-public class Copy implements Instruktion {
+public class Copy implements Instruction {
    private Operand op;
     private Address address;
 

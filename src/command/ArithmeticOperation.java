@@ -7,11 +7,11 @@ import computer.Memory;
 import Operand.Word;
 
 
-abstract public class arithmeticOperation implements Instruktion {
+abstract public class ArithmeticOperation implements Instruction {
     private Operand op1, op2;
     private Address address;
 
-    arithmeticOperation(Operand op1, Operand op2, Address address) {
+    ArithmeticOperation(Operand op1, Operand op2, Address address) {
         this.op1 = op1;
         this.op2 = op2;
         this.address = address;

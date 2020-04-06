@@ -3,7 +3,7 @@ package command;
 import computer.Computer;
 import computer.Memory;
 
-public class Halt implements Instruktion {
+public class Halt implements Instruction {
 
     public Halt(){
 
